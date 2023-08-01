@@ -1,0 +1,12 @@
+create table student(
+	name_st varchar(30) ,
+	age_st numeric check (age_st>0),
+	grade char default 'A'
+);
+
+insert into student VALUES('nikhil',22);
+
+insert into student VALUES(null,2,'A');
+
+select* from student;
+drop table if exists student;
